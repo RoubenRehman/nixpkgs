@@ -124,11 +124,11 @@ stdenv.mkDerivation (finalAttrs: {
     ./patches/cmake.patch
     # Fix build with gcc15
     # https://github.com/bambulab/BambuStudio/pull/8555
-    (fetchpatch {
-      name = "bambu-studio-include-stdint-header.patch";
-      url = "https://github.com/bambulab/BambuStudio/commit/434752bf643933f22348d78335abe7f60550e736.patch";
-      hash = "sha256-vWqTM6IHL/gBncLk6gZHw+dFe0sdVuPdUqYeVJUbTis=";
-    })
+    #(fetchpatch {
+    #  name = "bambu-studio-include-stdint-header.patch";
+    #  url = "https://github.com/bambulab/BambuStudio/commit/434752bf643933f22348d78335abe7f60550e736.patch";
+    #  hash = "sha256-vWqTM6IHL/gBncLk6gZHw+dFe0sdVuPdUqYeVJUbTis=";
+    #})
   ];
 
   doCheck = true;
